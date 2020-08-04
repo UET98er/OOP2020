@@ -156,6 +156,28 @@ public class Fraction {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        Fraction f1 = new Fraction();
+        Fraction f2 = new Fraction();
+        
+        f1.setNumerator(1);
+        f1.setDenominator(3);
+        f2.setNumerator(1);
+        f2.setDenominator(6);
+        
+        Fraction result = new Fraction();
+        result = f1.add(f2);
+        System.out.println(f1 + " + " + f2 + " = " + result);
+
+        result = f1.subtract(f2);
+        System.out.println(f1 + " - " + f2 + " = " + result);
+        
+        result = f1.multiply(f2);
+        System.out.println(f1 + " * " + f2 + " = " + result);
+        
+        result = f1.divide(f2);
+        System.out.println(f1 + " / " + f2 + " = " + result);
+        
+        
         // TODO code application logic here
     }
     
